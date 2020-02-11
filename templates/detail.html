@@ -1,0 +1,11 @@
+{%	extends	'base.html'	%}
+{%	block	content	%} 
+{%	for	add	in	object_list	%} 
+<div class="post-entry">
+    <h2>{{add.name}}</h2>
+    <h2>{{add.number}}</h2>
+    <h2>{{add.adress}}</h2>
+    <h2>{{add.relation}}</h2>
+    </div> 
+    {%	endfor	%} 
+    {%	endblock content %}

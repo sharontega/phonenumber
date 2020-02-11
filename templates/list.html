@@ -1,0 +1,8 @@
+{%	extends	'base.html'	%}
+{%	block	content	%} 
+{%	for	add	in	object_list	%} 
+<div	class="post-entry">
+    <h2>{{add.name}}</h2><button><a href="{% url 'detail' %}">view detail</a></button>
+    </div> 
+    {%	endfor	%} 
+    {%	endblock content %}
